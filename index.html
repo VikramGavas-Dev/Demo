@@ -135,8 +135,17 @@
                         </div>
                         <div class="tab-pane active" id="tab2">
                                 <form method="POST" action="#">
-                                        <label class="label">On Record</label>
-                                    <!-- <div class="input-group">
+                                    <select>
+                                        <option value="0">Select</option>
+                                        <option value="1">On Record</option>
+                                        <option value="2">On Dividend</option>
+                                        <option value="3">On Bonus</option>
+                                        <option value="4">On Merger</option>
+                                        <option value="5">On Name Change</option>
+                                    </select>                                                                                                                
+                                        
+                                    <!-- <label class="label"></label> 
+                                        <div class="input-group">
                                         
                                         <input class="input--style-1" type="text" name="address" placeholder="ISIN / AMFI Code" required="required">
                                     </div> -->
@@ -245,11 +254,24 @@
                         </div>
 
                         <div class="tab-pane" id="tab4">
-                                <form method="POST" action="#">
-                                    <div class="input-group">
-                                        <!-- <label class="label">origin:</label> -->
-                                        <input class="input--style-1" type="text" name="origin" placeholder="ELSS Fund /Fund Category /Scheme Type /Benchmark Index" required="required">
+                                <form method="POST" action="#">                                
+                                        <select>
+                                                <option value="0">Select</option>
+                                                <option value="1">ELSS Fund</option>
+                                                <option value="2">Fund Category</option>
+                                                <option value="3">Scheme Type</option>
+                                                <option value="4">Benchmark Index</option>                                                
+                                            </select>
+                                            <div class=" row-space">
+                                                        
+                                                <div class="input-group">
+                                                            <!-- <label class="label">Start Date:</label> -->
+                                                            <input class="input--style-1" type="text" name="origin" placeholder="Enter Fund" required="required">
+                                                        </div>
+                                                    
+
                                     </div>
+
                                     <button class="btn-submit" type="submit">search</button>
                                 </form>
                     </div>
