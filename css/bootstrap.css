@@ -10,7 +10,8 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
-  margin: 0;
+  padding-top: 60px;
+  /* padding-bottom: 40px; */
 }
 article,
 aside,
@@ -4145,8 +4146,36 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   font-weight: 600;
 }
 /* Changes New  Vikram */
+html {
+  position: relative;
+  min-height: 100%;
+}
+.rounded-top, .rounded-right {
+  border-top-right-radius: 5rem!important;
+}
+/* body {
+  /* Margin bottom by footer height 
+  margin-bottom: 60px;
+} */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+.fixed-bottom, .fixed-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.header nav.navbar-toggleable-md.navbar-light {
+  border-bottom: solid 1px rgba(255, 255, 255, 0.3);
+}
 .scrollable-panel{
-  max-height: 460px;
+  max-height: 345px;
   overflow: auto;
 }
 .bg-white {
@@ -4158,13 +4187,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .rounded-bottom, .rounded-left {
   border-bottom-left-radius: .25rem!important;
 }
-.rounded-right, .rounded-top {
+.rounded-top, .rounded-right {
   border-top-right-radius: .25rem!important;
 }
 .rounded-bottom, .rounded-right {
   border-bottom-right-radius: .25rem!important;
 }
-.rounded-left, .rounded-top {
+.rounded-top, .rounded-left {
   border-top-left-radius: .25rem!important;
 }
 /* End */
@@ -4621,11 +4650,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #f8f8f8;
+  background-color: #d81212;
   border-color: #e7e7e7;
 }
 .navbar-default .navbar-brand {
-  color: #777;
+  color: #f1f1f1;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
